@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WMW - World Minimum Wage in 2021</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+	<style type="text/css">
+		head, html, section, footer{margin:0;
+			}
+		div{margin: 0;}
+		body{margin:0;}
+		html{background:#1A1A1A;}
+		.scroll::-webkit-scrollbar{ display: none;}
+		a{display:block; width: 6vw; height: 5vh; z-index: 30;}
+		h1{color:#CCCCCC;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			text-align: left;
+			width: 40vw;
+			word-break: keep-all;
+			line-height: 4vh;
+			margin-top: 0vh;
+			margin-left: 55vw;
+			margin-bottom: 2vw;}
+		h2{color:#CCCCCC;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1.1vw;
+			text-align: left;
+			width: 40vw;
+			word-break: keep-all;
+			line-height: 4vh;
+			letter-spacing: -0.04vw;
+			margin-top: 0vw;
+			margin-left: 55vw;
+			margin-bottom: 2vw;}
+		footer{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 0.8vw;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			margin-top: 1vh;
+			margin: 3vw;
+			/*border-top: 0.01vw solid #F2F2F2;*/}
+		a{text-decoration: none;
+			width: auto; height: auto;}
+
+		.header{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			margin-bottom: 1vw;
+			z-index: 5;}
+		.exchangerate{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 32vw;
+			z-index: 3;}
+		.graph{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 42vw;
+			z-index: 3;}
+		.about{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 48vw;
+			z-index: 3;}
+		.subheader{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 70vw;
+			z-index: 3;}
+		.logo{top: 3vh; left: 88vw;
+			width: 10vw;
+			z-index: 30;}
+
+		section{}
+		.row{/*width: 1500px; height: 440px;*/
+			margin:auto; margin-right: 6vw; margin-bottom: 2.3vh;
+			display: flex;}
+		.marginright0{margin-right: 0vw;}
+		.col-5{width: 18vw; margin: 0vh 0.2vw;}
+		.gap{margin: 1.4vh 1vw; justify-content: center;}
+
+
+		.absolutegraph{position: absolute;
+						top: 0vh; left: 7vw;
+						bottom: 0vh;
+						z-index: 7;}
+		.boxspace{margin: 0vh 0vw;}
+
+		
+		.flex{display: flex;}
+		.fixed{position: fixed;}
+		.relative{position: relative;}
+		.absolute{position:  absolute;}
+		.z1{z-index: 1;}
+		.z100{z-index: 100;}
+		.outer{padding: 0vh 0vw;}
+		.inner{position: absolute;
+	  		bottom: 0vw; margin: 0vh 0vw; width: 18.5vw;}
+
+
+	  	#root{
+/*   height: 500px;
+  width: 500px; */
+  background:  #1A1A1A;
+}
+	</style>
+</head>
+<body class="scroll">
+	<div id="root">
+	<!--/상단 타이포, 로고-->
+	<section>
+			<div class="exchangerate absolute">
+				<p>Exchange Rate</p>
+				<p>2021-12-13 13:19</p>
+			</div>
+			<a href="graph2.html" class="graph absolute z100">
+				<p>Graph</p>
+			</a>
+			<a href="about.html" class="about absolute z100">
+				<p>About</p>
+			</a>
+			<div class="subheader absolute">
+				<p>World Minimum Wage in 2021</p>
+				<p style ="font-family: 'Noto Sans', sans-serif; font-weight: 300;">세계 최저임금 비교</style></p>
+			</div>
+			<a href="index.html" class="logo absolute">
+				<img src="logo.svg">
+			</a>
+	</section>
+	<!--/About 헤더-->
+	<section>
+		<div class="header">About</div>
+	</section>
+	<!--/About-->
+	<section>
+		<h1>최저임금(最低賃金, 영어: minimum wage)은 고용자가 피고용인을 저임금으로 부리는 착취를 막기 위해 정부에서 정한, 피고용인에게 지급해야 할 최소한의 임금을 말한다. 쉽게 말하면 법으로 최소한의 의식주 생활이 가능한 급여기준을 정하여 근로자의 생존권을 보호하는 제도적 장치라고 할 수 있다. 근로자의 생활안정과 노동력의 질적 향상을 위하여 각 나라는 자국의 법과 규정에 의해 최저 임금을 정하고 있다.
+		<br><br>
+		국가별로 최저임금은 모두 상이하다. 그렇다면 우리나라의 최저임금은 다른 국가에 비해 많은 편일까, 적은 편일까? 이를 비교할 수 있는 방법, 흔히 ‘빅맥지수’라고 불리는 국가별로 최저임금으로 살 수 있는 최대 빅맥 개수를 구하는 형식을 통해 상대적인 물가 수준을 확인할 수 있다.
+		<br><br>
+		이 웹페이지는 빅맥지수와 유사한 방법을 통해 국가별 최저임금을 시각적으로 비교한다. 국가별 최저임금으로 살 수 있는 대표적인 물건을 함께 확인하며 상대적인 물가를 비교할 수 있다. 최저임금제도가 존재하는 OECD 회원국 중 시간당 최저임금(이하 최저시급)을 계산할 수 있는 7개 국가를 선정하였다. 추가적으로, 최저시급이 존재하는 OECD 비회원국 남아프리카공화국의 최저시급 또한 분석했다.
+		</h1>
+		<h2><br>
+		The minimum wage refers to the minimum wage to be paid to employees set by the government to prevent the exploitation of employees as low wages. In other words, it can be said that it is an institutional device that protects workers' right to live by setting wage standards that allow minimum living on food, clothing, and shelter by law. In order to stabilize workers' lives and improve the quality of the labor force, each country sets the minimum wage according to its own laws and regulations.
+		<br><br>
+		The minimum wage varies from country to country. If so, will Korea's minimum wage be higher or less than that of other countries? The relative price level can be checked by calculating the maximum number of Big Macs that can be bought at the minimum wage for each country, commonly referred to as the 'Big Mac Index'.
+		<br><br>
+		This web page visually compares the minimum wage by country through a similar method to the Big Mac index. Representative items that can be bought at the minimum wage by country can be checked together and relative prices can be compared. Seven OECD member countries with the minimum wage system that can calculate the minimum wage per hour (hereinafter referred to as the minimum hourly wage)  were selected. In addition, the minimum hourly wage of South Africa, an OECD non-member country with a minimum hourly wage, was also analyzed.
+		</h2>
+	</section>
+	</div>
+	<footer>COPYRIGHT ©2021 MOON KYEONGSEO</footer>
+	<script type="text/javascript">
+		class Point {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+    this.lifetime = 0;
+  }
+}
+
+class Canvas extends React.Component {
+  state = {
+    cHeight: 300,
+    cWidth: 500,
+  };
+
+  canvas = React.createRef();
+
+ componentDidMount = () => {
+    // Set height and width on load because if set in state body isn't defined yet.
+    this.setState({
+      cHeight: document.body.clientHeight,
+      cWidth: document.body.clientWidth,
+    });
+
+    window.addEventListener(
+      'resize',
+      () => {
+        this.setState({
+          cHeight: document.body.clientHeight,
+          cWidth: document.body.clientWidth,
+        });
+      },
+      false,
+    );
+   
+    if (matchMedia('(pointer:fine)').matches) {
+      this.startAnimation();
+    }
+  }
+
+  startAnimation = () => {
+    const canvas = this.canvas.current;
+    const ctx = canvas.getContext('2d');
+
+    const points = [];
+
+    const addPoint = (x, y) => {
+      const point = new Point(x, y);
+      points.push(point);
+    };
+
+    document.addEventListener('mousemove', ({ clientX, clientY }) => {
+      addPoint(clientX - canvas.offsetLeft, clientY - canvas.offsetTop);
+    }, false);
+
+    const animatePoints = () => {
+      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      const duration = 0.7 * (1 * 1000) / 60; // Last 80% of a frame per point
+
+      for (let i = 0; i < points.length; ++i) {
+        const point = points[i];
+        let lastPoint;
+
+        if (points[i - 1] !== undefined) {
+          lastPoint = points[i - 1];
+        } else lastPoint = point;
+
+        point.lifetime += 1;
+
+        if (point.lifetime > duration) {
+          // If the point dies, remove it.
+          points.shift();
+        } else {
+          // Otherwise animate it:
+
+          // As the lifetime goes on, lifePercent goes from 0 to 1.
+          const lifePercent = (point.lifetime / duration);
+          const spreadRate = 7 * (1 - lifePercent);
+
+          ctx.lineJoin = 'round';
+          ctx.lineWidth = spreadRate;
+
+          // As time increases decrease r and b, increase g to go from purple to green.
+          const blue = Math.floor(190 - (190 * lifePercent));
+          const green = 0;
+          const red = Math.floor(210 + (210 * lifePercent));
+          ctx.strokeStyle = `rgb(${red},${green},${blue}`;
+
+          ctx.beginPath();
+
+          ctx.moveTo(lastPoint.x, lastPoint.y);
+          ctx.lineTo(point.x, point.y);
+
+          ctx.stroke();
+          
+          //line two
+//           ctx.lineWidth = spreadRate;
+//           ctx.lineHeight = spreadRate;
+
+//           // As time increases decrease r and b, increase g to go from purple to green.
+//           ctx.strokeStyle = `rgb(${green},${red},${blue}`;
+
+//           ctx.beginPath();
+
+//           ctx.moveTo(lastPoint.x, lastPoint.y);
+//           ctx.lineTo(point.x, point.y);
+
+//           ctx.stroke()
+          
+          ctx.closePath();
+        }
+      }
+      requestAnimationFrame(animatePoints);
+    };
+
+    animatePoints();
+  }
+
+  render = () => {
+    const { cHeight, cWidth } = this.state;
+    return <canvas ref={this.canvas} width={cWidth} height={cHeight} />;
+  }
+}
+
+// export default Canvas;
+ReactDOM.render(<Canvas/>,document.getElementById("root"));
+	</script>
+</body>
+</html>

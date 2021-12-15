@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WMW - World Minimum Wage in 2021</title>
+
+	<link rel="stylesheet" type="text/css" href="./seoul.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="seoul.js"></script>
+
+</head>
+<body class="scroll">
+	<div class="cursor">
+        <div class="dot"><span></span></div>
+        <div class="circle"></div>
+    </div>
+	<!--/상단 타이포, 로고-->
+	<section class="fixed" style="z-index: 300">
+			<!--/프로젝트 설명-->
+			<div class="subheader absolute">
+				<p>World Minimum Wage in 2021</p>
+				<p style ="font-family: 'Noto Sans', sans-serif; font-weight: 300;">세계 최저임금 비교</style></p>
+			</div>
+			<!--/로고-->
+			<a href="index.html" class="logo absolute">
+				<img src="logo.svg">
+			</a>
+
+	</section>
+
+	<!--/scroll-->
+	<section class="scrollbox">
+		<!--/seoul-->
+		<section class="seoulbox boxsticky">
+			<!--/seoul-->
+			<section>
+				<div id="headerseoul">SEOUL</div>
+				<!--/팝업창-->
+				<div id="cursorseoul">
+					<img src="seoulexp.svg">
+				</div>
+			</section>
+			<!--/arrow to tokyo-->
+			<section>
+				<div id="arrowBtn1">
+					<img src="arrowtokyo.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="SeoulText" style="padding-left: 31vw; opacity: 0;">
+					<h6>Minimum Hourly Wage<br>= A Cup of Coffee</h6>
+				</div>
+				<div id="SeoulText2" style="padding-left: 40vw; padding-top: 15vh; opacity: 0;">
+					<p class="Text2">"아메리카노 나오셨습니다." 물건에 존칭을 붙이는 이 잘못된 말은, 한 때 최저시급보다 아메리카노 한 잔이 가격이 더 높아 SNS 상에서 최저시급을 받는 아르바이트생 사이에서 유행하던 말이다. 최저시급 도입 초기부터 유난히 최저시급과 커피 가격을 비교하는 일이 잦았다. 커피값은 한국에서 최저시급에 관한 준거가격을 상징한다. 2021년 현재는 커피 한 잔 값보다 최저시급이 더 높은 8,720원을 기록하고 있다. 2022년 최저시급은 9,160원으로 확정되며 매년 소폭 상승하고 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="seoulImg">
+					<img src="seoulimg.png" style="width: 100%">
+				</div> 
+			</section>
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.1.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4>₩</h4>
+										<h4 class="count_num"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>1.51% ↑
+										<br>₩440</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+
+
+		<!--/tokyo-->
+		<section class="tokyobox boxsticky back1A">
+			<!--/tokyo-->
+			<section>
+				<div id="headertokyo">TOKYO</div>
+				<!--/팝업창-->
+				<div id="cursortokyo">
+					<img src="tokyoexp.svg">
+				</div>
+			</section>
+			<!--/arrow to washington-->
+			<section>
+				<div id="arrowBtn2">
+					<img src="arrowtokyo.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="TokyoText" style="padding-left: 31vw; opacity: 0;">
+					<h6>A part-time job is<br>someone's job</h6>
+				</div>
+				<div id="TokyoText2" style="padding-left: 40vw; padding-top: 15vh; opacity: 0;">
+					<p class="Text2">일본의 경우, 편의점 아르바이트로도 누군가에게 생활을 영위하는 직업이다. 일본의 길거리에서 쉽게 확인할 수 있는 아르바이트 구인광고를 보면 시급에 추가적으로 교통비를 지급한다. 또한, 대부분의 아르바이트는 최저임금의 최소 15% 최대 70% 정도를 더 지급한다. 일본의 최저임금은 물가상승률 및 성장률 등을 고려해 결정된다. 물가상승률이 높으면 소비자의 구매력이 저하되기 때문에 최저임금을 인상해야 한다는 압력이 강해진다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="tokyoImg">
+					<img src="tokyoimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.10.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4>¥</h4>
+										<h4 class="count_num2"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hreftokyo">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2 class="tokyo-in">3.1% ↑
+										<br>¥28</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+		</section>
+
+		<!--/washington-->
+		<section class="washibox boxsticky back1A">
+			<!--/washington-->
+			<section>
+				<div id="headerwashi">WASHINGTON,<br>D.C.</div>
+				<!--/팝업창-->
+				<div id="cursorwashi">
+					<img src="washiexp.svg">
+				</div>
+			</section>
+			<!--/arrow to pretoria-->
+			<section>
+				<div id="arrowBtn3">
+					<img src="arrowpreto.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="WashiText" style="padding-left: 31vw; margin-top: -2vh; opacity: 0;">
+					<h6 style="color: #F59D33">“15 dollars per hour"<br>New job search standards</h6>
+				</div>
+				<div id="WashiText2" style="padding-left: 40vw; margin-top: -13vh; opacity: 0;">
+					<p class="Text2">‘시간당 임금 15달러’는 미국 노동계에서 10년 이상 요구해온 오랜 목표였다. 현재 미국은 코로나 상황과 맞물리며 미국 노동자의 80%가 최소 15달러의 시급을 받게 되었다. 대형 마트나 음식점 등에서 일하는 저임금 노동자의 임금이 이른바 ‘아마존 효과’로 인해 오르고 있기 떄문이다. 미국에서 코로나19 사태 이후 경제 정상화가 빠르게 이뤄지고 있는 가운데 아마존이 직원 채용을 위해 시급을 대폭 올리면서 다른 기업들도 따라가야 하는 처지에 놓였다. 미국 내 채용 회사 조사에 따르면 현재 미국 구직자들은 시간당 15달러 이하 일자리는 거들떠보지도 않는다고 한다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="washiImg">
+					<img src="washiimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2022.3.30.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace" style="margin-left: 7vw">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #F59D33">$</h4>
+										<h4 class="count_num3" style="color: #F59D33"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefwashi">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>37% ↑
+										<br>$4.05</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+		<!--/pretoria-->
+		<section class="pretobox boxsticky back1A">
+			<!--/pretoria-->
+			<section>
+				<div id="headerpreto">PRETORIA</div>
+				<!--/팝업창-->
+				<div id="cursorpreto">
+					<img src="pretoexp.svg">
+				</div>
+			</section>
+			<!--/arrow to berlin-->
+			<section>
+				<div id="arrowBtn4">
+					<img src="arrowberlin.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="PretoText" style="padding-left: 31vw; opacity: 0;">
+					<h6 style="color: #7DC04F">Join the boycott<br>of South African tea</h6>
+				</div>
+				<div id="PretoText2" style="padding-left: 40vw; margin-top: 10vh; opacity: 0;">
+					<p class="Text2">남아공 단일 최저임금법은 업종, 지역, 연령 등 구분없이 시급 21.69랜드를 최저임금으로 적용하고 있다. 예외적으로 농장근로자, 가사노동자, 확장된 공공사업 프로그램 참여 근로자의 최저임금은 별도의 기준에 따라 적용된다. 현재 남아공의 실업률은 매해 최고치를 기록하고 있어 남아공 고용시장 개선이 반드시 필요한 상황이다. 특히 낮은 보수를 받고 있는 농장근로자, 가사노동자들은 대부분 흑인으로 구성돼 있기 때문에 단일 최저임금제 시행을 통한 기본급 보장은 흑인 계층의 경제력 향상과 직결되어 있다고 볼 수 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="pretoImg">
+					<img src="pretoimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.1.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #7DC04F">R</h4>
+										<h4 class="count_num4" style="color: #7DC04F"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefpreto">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>4.48% ↑
+										<br>R0.93</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<!--/berlin-->
+		<section class="berlinbox boxsticky back1A">
+			<!--/berlin-->
+			<section>
+				<div id="headerberlin">BERLIN</div>
+				<!--/팝업창-->
+				<div id="cursorberlin">
+					<img src="berlinexp.svg">
+				</div>
+			</section>
+			<!--/arrow to paris-->
+			<section>
+				<div id="arrowBtn5">
+					<img src="arrowparis.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="BerlinText" style="padding-left: 33vw; margin-top: -5vh; opacity: 0;">
+					<h6 style="color: #9A68EB">2021, 6 years<br>of minimum wage<br>introduction</h6>
+				</div>
+				<div id="BerlinText2" style="padding-left: 40vw; margin-top: 10vh; opacity: 0;">
+					<p class="Text2">2016년에 나온 독일 최저임금위원회 보고서를 보면, 최저임금 도입 첫해인 2015년 초 미니잡에서만 일하는 노동자는 한해 전보다 10만명 줄었고, 이 중 절반가량은 사회보험 의무 가입 대상인 정규직으로 전환됐다. 특히 최저임금제 도입에 따른 영향이 큰 소매업·외식업에서 미니잡의 감소가 두드러졌다. 최저임금 도입은 동·서독 간 크게 벌어져 있던 임금격차를 줄이는 성과도 남겼다. 제도 도입 전에는 저임금 노동자 비중은 동독 지역이 서독 지역에 비해 두 배 이상 많았지만 이런 격차가 완만해지고 있다. 동독 지역의 미숙련·반숙련 노동자 임금이 큰 폭으로 올랐기 때문이다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="berlinImg">
+					<img src="berlinimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.7.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace" style="margin-left: 3vw">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #9A68EB">€</h4>
+										<h4 class="count_num5" style="color: #9A68EB"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefberlin">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>1.05% ↑
+										<br>€0.1</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<!--/paris-->
+		<section class="parisbox boxsticky back1A">
+			<!--/paris-->
+			<section>
+				<div id="headerparis">PARIS</div>
+				<!--/팝업창-->
+				<div id="cursorparis">
+					<img src="parisexp.svg">
+				</div>
+			</section>
+			<!--/arrow to london-->
+			<section>
+				<div id="arrowBtn6">
+					<img src="arrowlondon.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="ParisText" style="padding-left: 39vw; margin-top: -5vh; opacity: 0;">
+					<h6 style="color: #9A68EB">3 years since<br>mouvement<br>des gilets jaunes</h6>
+				</div>
+				<div id="ParisText2" style="padding-left: 40vw; margin-top: 7vh; opacity: 0;">
+					<p class="Text2">2018년 10월 21일, 프랑스에서 처음 시작된 '노란 조끼' 시위로부터 3년. 유류세 인상을 반대하는 시위로 시작한 '노란 조끼' 시위는 높은 물가와 생활비에 지친 시민들이 동참하면서 프랑스 전역을 한 달 째 휩쓸었다. 또한, 페이스북에 '노란 조끼' 시위 영상이 올라와 화제가 된 지 불과 4주 만에 프랑스의 경제 및 사회 정책이 변경되었다. 마크롱 대통령은 생방송 연설에서 "내년부터 노동자의 최저임금을 월 100유로 인상할 것"이라며 "우리는 일을 통해 존엄하게 살 수 있는 프랑스를 원한다"고 말했다. 2021년, 그로부터 3년, 현재 프랑스의 최저임금은 시간당 약 14,000원이며, 매년 상승하고 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="parisImg">
+					<img src="parisimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.10.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #9A68EB">€</h4>
+										<h4 class="count_num6" style="color: #9A68EB"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefparis">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>2.2% ↑
+										<br>€0.23</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<!--/london-->
+		<section class="londonbox boxsticky back1A">
+			<!--/london-->
+			<section>
+				<div id="headerlondon">LONDON</div>
+				<!--/팝업창-->
+				<div id="cursorlondon">
+					<img src="londonexp.svg">
+				</div>
+			</section>
+			<!--/arrow to canberra-->
+			<section>
+				<div id="arrowBtn7">
+					<img src="arrowcanbe.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="LondonText" style="padding-left: 31vw; opacity: 0;">
+					<h6 style="color: #9A68EB">Minimum Wage<br>+ (National Living<br>Wage)</h6>
+				</div>
+				<div id="LondonText2" style="padding-left: 40vw; margin-top: 2vh; opacity: 0;">
+					<p class="Text2">수백만 일자리 공석 현상이 일어나고 있는 상황에서 물가와 가계소득을 고려한 생활임금을 기준으로 급여를 주는 기업들이 늘어나고 있다. 파이낸셜타임스는 영국 런던국제증권거래소(ISE)에 상장된 시가총액 상위 100개 기업 절반이 노동자들에 생활임금을 기준으로 임금을 지급하고 있다고 보도했다. 생활임금은 ‘노동자가 안정된 생활을 누리고 삶의 질을 높일 수 있는 수준으로 책정되는 금액’으로 보통 최저임금보다 높게 설정된다. BBC는 현재 국내 사업장 9000곳이 생활임금을 지급하고 있으며 이중 3000곳은 코로나19 대유행 이후 생활임금제를 도입했다고 15일 전했다. 현재 30만명 이상의 노동자들이 생활임금을 받고 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="londonImg">
+					<img src="londonimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.4.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace" style="margin-left: 3vw">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #9A68EB">£</h4>
+										<h4 class="count_num7" style="color: #9A68EB"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hreflondon">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>2.2% ↑
+										<br>£0.19</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<!--/canberra-->
+		<section class="canbebox boxsticky back1A">
+			<!--/canberra-->
+			<section>
+				<div id="headercanbe">CANBERRA</div>
+				<!--/팝업창-->
+				<div id="cursorcanbe">
+					<img src="canbeexp.svg">
+				</div>
+			</section>
+
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="CanbeText" style="padding-left: 35vw; opacity: 0;">
+					<h6 style="color: #43B9DD">The world's No. 1<br>minimum wage</h6>
+				</div>
+				<div id="CanbeText2" style="padding-left: 40vw; padding-top: 7vh; opacity: 0;">
+					<p class="Text2">호주는 10년 이상 세계 1위의 최저임금을 유지해오고 있다. 이처럼 높은 시급을 유지하면서도 경제활동이 가능한 이유는 호주는 시간당 노동생산성이 굉장히 높은 나라이기 때문이다. 호주 땅에 있는 엄청난 자원과 관광으로부터 나오는 수익때문에 가능합니다. 호주는 근무형태가 3가지로 나뉘며, 각 근무형태에 따라 다른 특징을 가진다. Full Time : 일반적인 회사원, 고용 안정성 / Part Time : 주에 20시간이상 38시간 이하 노동 가능, 초과 근무 시 오버타임 페이를 받을 수 있으며, 이외 추가급여도 있음 / Casual : 불규칙한 일 배정, 파트타임 시급의 +25%를 추가적으로 지급</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="canbeImg">
+					<img src="canbeimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.7.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #43B9DD">$</h4>
+										<h4 class="count_num8" style="color: #43B9DD"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefcanbe">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.7.1.</h1>
+									<h2>2.47% ↑
+										<br>¢49</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+
+		
+
+
+	</section>
+	<script type="text/javascript">
+        //커서
+        const cursorDot = document.querySelector(".cursor .dot");
+		const cursorCircle = document.querySelector(".cursor .circle");
+		const cursorText = document.querySelector(".cursor .dot span");
+		var touchDevice = false;
+		var hoverLink = false;
+
+		let currentX = 0, currentY = 0;
+		let aimX = 0, aimY = 0;
+		let speed = 0.15;
+
+		// document.body.classList.add("noCursor");
+		// cursorCircle.classList.remove("hide");
+		// cursorDot.classList.remove("hide");
+
+		const animate = () => {
+		    currentX += (aimX - currentX) * speed;
+		    currentY += (aimY - currentY) * speed;
+
+		    cursorCircle.style.left = currentX + "px";
+		    cursorCircle.style.top = currentY + "px";
+		    requestAnimationFrame(animate);
+		}
+
+		animate();
+
+		document.addEventListener("mousemove", (e) => {
+		    if (!touchDevice) {
+		        cursorDot.style.left = e.clientX + "px";
+		        cursorDot.style.top = e.clientY + "px";
+		    }
+		    if (!hoverLink) {
+		        aimX = e.clientX;
+		        aimY = e.clientY;
+		    }
+		});
+
+		document.addEventListener("touchend", (e) => { 
+		    touchDevice = true;
+		    cursorCircle.remove();
+		    cursorDot.remove();
+		    document.body.classList.remove("noCursor");
+		});
+
+		//헤더 따라다니기
+		$("#headerseoul").on({
+            mousemove: (e) => {
+                $("#cursorseoul").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX+10 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorseoul").show();
+            },
+            mouseout: (e) => {
+                $("#cursorseoul").hide();
+            }
+        });
+
+        $("#headertokyo").on({
+            mousemove: (e) => {
+                $("#cursortokyo").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-2050 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursortokyo").show();
+            },
+            mouseout: (e) => {
+                $("#cursortokyo").hide();
+            }
+        });
+
+        $("#headerwashi").on({
+            mousemove: (e) => {
+                $("#cursorwashi").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-4100 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorwashi").show();
+            },
+            mouseout: (e) => {
+                $("#cursorwashi").hide();
+            }
+        });
+
+        $("#headerpreto").on({
+            mousemove: (e) => {
+                $("#cursorpreto").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-6150 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorpreto").show();
+            },
+            mouseout: (e) => {
+                $("#cursorpreto").hide();
+            }
+        });
+
+        $("#headerberlin").on({
+            mousemove: (e) => {
+                $("#cursorberlin").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-8200 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorberlin").show();
+            },
+            mouseout: (e) => {
+                $("#cursorberlin").hide();
+            }
+        });
+
+        $("#headerparis").on({
+            mousemove: (e) => {
+                $("#cursorparis").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-10250 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorparis").show();
+            },
+            mouseout: (e) => {
+                $("#cursorparis").hide();
+            }
+        });
+
+        $("#headerlondon").on({
+            mousemove: (e) => {
+                $("#cursorlondon").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-12300 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorlondon").show();
+            },
+            mouseout: (e) => {
+                $("#cursorlondon").hide();
+            }
+        });
+
+
+        $("#headercanbe").on({
+            mousemove: (e) => {
+                $("#cursorcanbe").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-14350 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorcanbe").show();
+            },
+            mouseout: (e) => {
+                $("#cursorcanbe").hide();
+            }
+        });
+
+
+        //Seoul Text
+		$("#seoulImg").on({
+            mouseover: (e) => {
+                $("#SeoulText").show();
+                $("#SeoulText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-27vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#SeoulText").hide();
+                $("#SeoulText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#seoulImg").on({
+            mouseover: (e) => {
+                $("#SeoulText2").show();
+                $("#SeoulText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#SeoulText2").hide();
+                $("#SeoulText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //Tokyo Text
+		$("#tokyoImg").on({
+            mouseover: (e) => {
+                $("#TokyoText").show();
+                $("#TokyoText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-27vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#TokyoText").hide();
+                $("#TokyoText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#tokyoImg").on({
+            mouseover: (e) => {
+                $("#TokyoText2").show();
+                $("#TokyoText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(28vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#TokyoText2").hide();
+                $("#TokyoText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+         //Washington Text
+		$("#washiImg").on({
+            mouseover: (e) => {
+                $("#WashiText").show();
+                $("#WashiText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-27vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#WashiText").hide();
+                $("#WashiText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#washiImg").on({
+            mouseover: (e) => {
+                $("#WashiText2").show();
+                $("#WashiText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(31vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#WashiText2").hide();
+                $("#WashiText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //Preto Text
+		$("#pretoImg").on({
+            mouseover: (e) => {
+                $("#PretoText").show();
+                $("#PretoText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#PretoText").hide();
+                $("#PretoText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#pretoImg").on({
+            mouseover: (e) => {
+                $("#PretoText2").show();
+                $("#PretoText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(23vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#PretoText2").hide();
+                $("#PretoText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //Berlin Text
+		$("#berlinImg").on({
+            mouseover: (e) => {
+                $("#BerlinText").show();
+                $("#BerlinText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out",
+                      height: "20vh"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#BerlinText").hide();
+                $("#BerlinText").css({
+                      opacity: 0,
+                      position:"absolute",
+                      height: "20vh"
+                  })
+            	}
+        });
+
+        $("#berlinImg").on({
+            mouseover: (e) => {
+                $("#BerlinText2").show();
+                $("#BerlinText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(27vw)",
+                      transition: "0.7s ease-in-out",
+                      height: "20vh"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#BerlinText2").hide();
+                $("#BerlinText2").css({
+                      opacity: 0,
+                      position:"absolute",
+                      height: "20vh"
+                  })
+            	}
+        });
+
+        //Paris Text
+		$("#parisImg").on({
+            mouseover: (e) => {
+                $("#ParisText").show();
+                $("#ParisText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#ParisText").hide();
+                $("#ParisText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#parisImg").on({
+            mouseover: (e) => {
+                $("#ParisText2").show();
+                $("#ParisText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(19vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#ParisText2").hide();
+                $("#ParisText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //London Text
+		$("#londonImg").on({
+            mouseover: (e) => {
+                $("#LondonText").show();
+                $("#LondonText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#LondonText").hide();
+                $("#LondonText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#londonImg").on({
+            mouseover: (e) => {
+                $("#LondonText2").show();
+                $("#LondonText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(27vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#LondonText2").hide();
+                $("#LondonText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //Canberra Text
+		$("#canbeImg").on({
+            mouseover: (e) => {
+                $("#CanbeText").show();
+                $("#CanbeText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#Canbeext").hide();
+                $("#CanbeText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#canbeImg").on({
+            mouseover: (e) => {
+                $("#CanbeText2").show();
+                $("#CanbeText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#CanbeText2").hide();
+                $("#CanbeText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+
+
+        //스크롤에 따라 배경색
+		$(document).ready(function(){
+		$(window).scrollLeft(0);
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=1000 ){
+					
+					$(".seoulbox").css({
+						background: "#11A79B"
+					});
+				}
+				else {
+					$(".seoulbox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+		});
+
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=2500 ){
+					$(".tokyobox").css({
+						background: "#11A79B"
+					});
+				}
+				else {
+					$(".tokyobox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=4700 ){
+					$(".washibox").css({
+						background: "#F59D33"
+					});
+				}
+				else {
+					$(".washibox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=6900 ){
+					$(".pretobox").css({
+						background: "#7DC04F"
+					});
+				}
+				else {
+					$(".pretobox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+		
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=9100 ){
+					$(".berlinbox").css({
+						background: "#9A68EB"
+					});
+				}
+				else {
+					$(".berlinbox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=11300 ){
+					$(".parisbox").css({
+						background: "#9A68EB"
+					});
+				}
+				else {
+					$(".parisbox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=13500 ){
+					$(".londonbox").css({
+						background: "#9A68EB"
+					});
+				}
+				else {
+					$(".londonbox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+
+	</script>
+</body>
+</html>

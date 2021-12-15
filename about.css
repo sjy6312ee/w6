@@ -1,0 +1,185 @@
+
+		head, html, section, footer{margin:0;
+			}
+		div{margin: 0;}
+		body{margin:0; cursor: none;}
+		html{background:#1A1A1A;}
+		.scroll::-webkit-scrollbar{ display: none;}
+		a{display:block; width: 6vw; height: 5vh; z-index: 30;}
+		h1{color:#CCCCCC;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			text-align: left;
+			width: 40vw;
+			word-break: keep-all;
+			line-height: 4vh;
+			margin-top: 0vh;
+			margin-left: 55vw;
+			margin-bottom: 1vw;
+			z-index: 150;}
+		h2{color:#CCCCCC;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1.1vw;
+			text-align: left;
+			width: 40vw;
+			word-break: keep-all;
+			line-height: 4vh;
+			letter-spacing: -0.04vw;
+			margin-top: 0vw;
+			margin-left: 55vw;
+			margin-bottom: 2vw;
+			z-index: 150;}
+		footer{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 0.8vw;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			margin-top: 1vh;
+			margin: 3vw;
+			/*border-top: 0.01vw solid #F2F2F2;*/}
+		a{text-decoration: none;
+			width: auto; height: auto;}
+
+		.header{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			margin-bottom: 1vw;
+			z-index: 5;}
+		.exchangerate{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 32vw;
+			z-index: 3;}
+		.graph{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 42vw;
+			z-index: 3;}
+		.about{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 48vw;
+			z-index: 3;}
+		.subheader{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 70vw;
+			z-index: 3;}
+		.logo{top: 3vh; left: 88vw;
+			width: 10vw;
+			z-index: 30;}
+
+		section{}
+		.row{/*width: 1500px; height: 440px;*/
+			margin:auto; margin-right: 6vw; margin-bottom: 2.3vh;
+			display: flex;}
+		.marginright0{margin-right: 0vw;}
+		.col-5{width: 18vw; margin: 0vh 0.2vw;}
+		.gap{margin: 1.4vh 1vw; justify-content: center;}
+
+
+		.absolutegraph{position: absolute;
+						top: 0vh; left: 7vw;
+						bottom: 0vh;
+						z-index: 7;}
+		.boxspace{margin: 0vh 0vw;}
+
+		
+		.flex{display: flex;}
+		.fixed{position: fixed;}
+		.relative{position: relative;}
+		.absolute{position:  absolute;}
+		.z1{z-index: 1;}
+		.z100{z-index: 100;}
+		.outer{padding: 0vh 0vw;}
+		.inner{position: absolute;
+	  		bottom: 0vw; margin: 0vh 0vw; width: 18.5vw;}
+
+
+	  	.cursor div {
+			    display: block;
+			/*     display: none; */
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    animation: fadein 1s;
+			    --cursor-colour: #EE5864;
+			    z-index: 100;}
+
+		.cursor .dot {
+			    width:  0.8rem;
+			    height: 0.8rem;
+			    background-color: var(--cursor-colour);
+			    border-radius: 50%;
+			    pointer-events: none;
+			    transform: translate(-50%, -50%);
+			    transition: opacity 0.5s;
+			    transition: width .8s, height .8s;}
+
+		.cursor .circle {
+			    width: 3.5rem;
+			    height: 3.5rem;
+			    background-color: rgba(0,0,0,0);
+			    border: 1px solid var(--cursor-colour);
+			    border-radius: 50%;
+			    pointer-events: none;
+			    transform: translate(-50%, -50%);
+			    transition: opacity 0.2s;
+			    transition: width 0.2s , height 0.2s;}
+
+		div.cursor div span {position: absolute;
+			    top:-0.5em;
+			    left: .6em;
+			    width: 300px;
+
+			    font-size: 30pt;
+			    font-weight: 600;
+			    color: var(--cursor-colour);
+			    
+			    opacity: 0;
+			    transition: opacity 0.5s;
+			    z-index: 100;}
+
+		div.cursor div .visible {opacity: 1;}
+
+		.cursor .hide {opacity: 0;}
+
+		.cursor .dot-hover {background-color: var(--link-color);
+			    width: .6rem;
+			    height: .6rem;
+			    opacity: 0.8;}
+
+		.cursor .expand {width: 6rem;
+			    height: 6rem;}
+
+		.cursor .shrink {width: 2rem;
+			    height: 2rem;}
+
+		.cursor .fill {border: 2px solid var(--primary-color);}
+
+		@keyframes fadein {
+			    0% { opacity: 0; }
+			    25% { opacity: .5; }
+			    100% { opacity: 1; }

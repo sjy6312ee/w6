@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WMW - World Minimum Wage in 2021</title>
+	<meta name="description" content="2021년 세계 최저임금 비교 World Minimum Wage in 2021">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta name=" theme-color" content="#1A1A1A">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://sjy6312ee.github.io/WMW/index.html">
+	<meta property="og:image" content="./siteimg.png">
+	<meta property="og:title" content="WMW - World Minimum Wage in 2021">
+	<meta property="og:description" content="2021년 세계 최저임금 비교 World Minimum Wage in 2021">
+
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="script.js"></script>
+
+</head>
+<body>
+	<!--/커서-->
+	<div class="cursor">
+        <div class="dot"><span></span></div>
+        <div class="circle"></div>
+    </div>
+	<!--/상단 타이포, 로고-->
+	<section>
+			<div class="exchangerate absolute">
+				<p>Exchange Rate</p>
+				<p>2021-12-13 13:19</p>
+			</div>
+			<a href="graph2.html" class="graph absolute z100">
+				<p>Graph</p>
+			</a>
+			<a href="about.html" class="about absolute z100">
+				<p>About</p>
+			</a>
+			<div class="subheader absolute">
+				<p>World Minimum Wage in 2021</p>
+				<p style ="font-family: 'Noto Sans', sans-serif; font-weight: 300;">세계 최저임금 비교</style></p>
+			</div>
+			<a href="index.html" class="logo absolute">
+				<img src="logo.svg">
+			</a>
+	</section>
+	<!--/WMW 헤더-->
+	<section>
+		<div class="header">World<br>Minimum Wage<br>in 2021</div>
+	</section>
+	<!--/배경 핑크 실루엣-->
+	<section class="row">
+		<div id="pinkkor">
+			<img src="pinkkor.svg" class="z1">
+		</div>
+		<div id="pinkjpn">
+			<img src="pinkjpn.svg" class="z1">
+		</div>
+		<div id="pinkusa">
+			<img src="pinkusa.svg" class="z1">
+		</div>
+		<div id="pinkzaf">
+			<img src="pinkzaf.svg" class="z1">
+		</div>
+		<div id="pinkdeu">
+			<img src="pinkdeu.svg" class="z1">
+		</div>
+		<div id="pinkfra">
+			<img src="pinkfra.svg" class="z1">
+		</div>
+		<div id="pinkgbr">
+			<img src="pinkgbr.svg" class="z1">
+		</div>
+		<div id="pinkaus">
+			<img src="pinkaus.svg" class="z1">
+		</div>
+	</section>
+	<!--/그래프-->
+	<section class="row absolutegraph">
+		<!--/아시아-->
+		<div class="col-5 outer">
+			<div class="inner">
+				<div id="asia" class="gap">Asia</div>
+				<!--/SEOUL 한국-->
+				<div id="kor" class="gap" OnClick="location.href ='seoul.html'" style="cursor:pointer;">
+					<div class="row boxspace">
+						<h1>SEOUL</h1>
+						<h2>KOR</h2>
+					</div>
+					<div class="row marginright0">
+						<h3>₩8,720</h3>
+						<img src="arrow.svg" class="arrowkor">
+					</div>
+				</div>
+				<!--/TOKYO 일본-->
+				<a href="./seoul.html#hreftokyo">
+					<div id="jpn" class="gap">
+						<div class="row boxspace">
+							<h1>TOKYO</h1>
+							<h2>JPN</h2>
+						</div>
+						<div class="row marginright0">
+							<h3 class="marginjpn">₩10,827</h3>
+							<img src="arrow.svg" width="35px" class="arrowjpn marginjpn">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--/아메리카-->
+		<div class="col-5">
+			<div class="inner">
+				<div id="america" class="gap">North America</div>
+				<!--/WASHINGTON 미국-->
+				<a href="./seoul.html#hrefwashi">
+					<div id="usa" class="gap">
+						<div class="row boxspace">
+							<h1>WASHINGTON,<br>D.C.</h1>
+							<h2>USA</h2>
+						</div>
+						<div class="row marginright0">
+							<h3 class="marginusa">₩17,761</h3>
+							<img src="arrow.svg" width="35px" class="arrowusa">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--/아프리카-->
+		<div class="col-5">
+			<div class="inner">
+				<div id="africa" class="gap">Africa</div>
+				<!--/PRETORIA 남아공-->
+				<a href="./seoul.html#hrefpreto">
+					<div id="zaf" class="gap">
+						<div class="row boxspace">
+							<h1>PRETORIA</h1>
+							<h2>ZAF</h2>
+						</div>
+						<div class="row marginright0">
+							<h3 class="marginzaf">₩1,605</h3>
+							<img src="arrow.svg" width="35px" class="arrowzaf">
+						</div>
+					</div>
+				</a>
+			</div>	
+		</div>
+		<!--/유럽-->
+		<div class="col-5">
+			<div class="inner">
+				<div id="europe" class="gap">Europe</div>
+				<!--/BERLIN 독일-->
+				<a href="./seoul.html#hrefberlin">
+					<div id="deu" class="gap">
+						<div class="row boxspace">
+							<h1>BERLIN</h1>
+							<h2>DEU</h2>
+						</div>
+						<div class="row marginright0">
+							<h3 class="margindeu">₩12,808</h3>
+							<img src="arrow.svg" width="35px" class="arrowdeu">
+						</div>
+					</div>
+				</a>
+				<!--/PARIS 프랑스-->
+				<a href="./seoul.html#hrefparis">
+					<div id="fra" class="gap">
+						<div class="row boxspace">
+							<h1>PARIS</h1>
+							<h2>FRA</h2>
+						</div>
+						<div class="row marginright0">
+							<h3 class="marginfra">₩13,982</h3>
+							<img src="arrow.svg" width="35px" class="arrowfra">
+						</div>
+					</div>
+				</a>
+				<!--/LONDON 영국-->
+				<a href="./seoul.html#hreflondon">
+					<div id="gbr" class="gap">
+						<div class="row boxspace">
+							<h1>LONDON</h1>
+							<h2>GBR</h2>
+						</div>
+						<div class="row marginright0">
+							<h3 class="margingbr">₩13,969</h3>
+							<img src="arrow.svg" width="35px" class="arrowgbr">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--/오세아니아-->
+		<div class="col-5">
+			<div class="inner">
+				<div id="australia" class="gap">Australia</div>
+				<!--/CANBERRA 호주-->
+				<a href="./seoul.html#hrefcanbe">
+					<div id="aus" class="gap">
+						<div class="row boxspace">
+							<h1>CANBERRA</h1>
+							<h2>AUS</h2>
+						</div>
+						<div class="row marginright0">
+							<h3 class="marginaus">₩24,034</h3>
+							<img src="arrow.svg" width="35px" class="arrowaus">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<footer>COPYRIGHT ©2021 MOON KYEONGSEO</footer>
+
+	<script type="text/javascript">
+			//커서
+  		const cursorDot = document.querySelector(".cursor .dot");
+		const cursorCircle = document.querySelector(".cursor .circle");
+		const cursorText = document.querySelector(".cursor .dot span");
+		var touchDevice = false;
+		var hoverLink = false;
+
+		let currentX = 0, currentY = 0;
+		let aimX = 0, aimY = 0;
+		let speed = 0.15;
+
+		const animate = () => {
+		    currentX += (aimX - currentX) * speed;
+		    currentY += (aimY - currentY) * speed;
+
+		    cursorCircle.style.left = currentX + "px";
+		    cursorCircle.style.top = currentY + "px";
+		    requestAnimationFrame(animate);
+		}
+
+		animate();
+
+		document.addEventListener("mousemove", (e) => {
+		    if (!touchDevice) {
+		        cursorDot.style.left = e.clientX + "px";
+		        cursorDot.style.top = e.clientY + "px";
+		    }
+		    if (!hoverLink) {
+		        aimX = e.clientX;
+		        aimY = e.clientY;
+		    }
+		});
+
+		document.addEventListener("touchend", (e) => { 
+		    touchDevice = true;
+		    cursorCircle.remove();
+		    cursorDot.remove();
+		    document.body.classList.remove("noCursor");
+		});
+
+
+	</script>
+</body>
+</html>
